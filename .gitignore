@@ -1,0 +1,98 @@
+# =============== #
+# Unity Generated #
+# =============== #
+
+# Ignore auto-generated and system-specific files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# Avoid committing crash reports
+CrashReports/
+MemoryCaptures/
+
+# Ignore asset imports and caches
+*.sln
+*.csproj
+*.pidb
+*.unityproj
+*.userprefs
+*.ilk
+*.pdb
+*.opendb
+*.VC.db
+
+# =============== #
+# Unity Specific  #
+# =============== #
+
+# Ignore Unity meta files that are generated automatically
+*.unitypackage
+*.assetbundle
+*.prefab.meta
+*.mat.meta
+*.physicMaterial.meta
+
+# Ignore Lightmap and GI Cache
+[Ll]ightmap-*
+/[Ll]GIData/
+
+# =============== #
+# Version Control #
+# =============== #
+
+# Ignore files created by Unity Collaborate or Plastic SCM
+/[Cc]ollab/
+/[Pp]lasticSCM/
+
+# Ignore Rider & VS Code IDE settings
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignore JetBrains Rider cache
+/.idea/workspace.xml
+/.idea/modules.xml
+/.idea/*.iml
+/.idea/misc.xml
+
+# Ignore logs, temp, and local settings
+*.log
+*.bak
+*.swp
+*.tmp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+
+# Ignore build artifacts
+/Builds/
+*.apk
+*.aab
+*.ipa
+*.exe
+*.app
+*.xcodeproj
+*.xcworkspace
+
+# =============== #
+# Unity Packages  #
+# =============== #
+
+# Ignore dependencies stored in Library folder
+Packages/com.unity.package-manager.cache/
+Packages/com.unity.assetstore/
+
+# Ignore Unity Hub metadata
+/UnityPackageManager/
+
+# Cache, Lightmaps, and auto-generated files
+/Lightmaps/
+/LightProbe-*/
+/ReflectionProbe-*/
+/LightingData.asset
