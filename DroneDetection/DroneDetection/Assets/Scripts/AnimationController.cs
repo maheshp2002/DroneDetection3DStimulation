@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class AnimationController : MonoBehaviour
 {
@@ -53,6 +54,10 @@ public class AnimationController : MonoBehaviour
 
         finalScreen.SetActive(true);
         allowedText.SetActive(true);
+
+        yield return new WaitForSeconds(3f);
+
+        CloseUnityScene();
     }
 
     public void OnCaptureClicked()
@@ -76,6 +81,10 @@ public class AnimationController : MonoBehaviour
 
         finalScreen.SetActive(true);
         capturedText.SetActive(true);
+
+        yield return new WaitForSeconds(3f);
+
+        CloseUnityScene();
     }
 
     public void OnDestroyClicked()
@@ -105,5 +114,20 @@ public class AnimationController : MonoBehaviour
         firePrefab.SetActive(false);
         finalScreen.SetActive(true);
         capturedText.SetActive(true);
+
+        yield return new WaitForSeconds(3f);
+
+        CloseUnityScene();
     }
+
+    IEnumerator CloseUnityScene()
+    {
+        yield return new WaitForSeconds(4f); // Wait for 4 seconds
+
+        // Call JavaScript function to navigate back to home
+        #if UNITY_WEBGL && !UNITY_EDITOR
+            CloseBrowserWindow(); // Call JavaScript function
+        #endif
+    }
+
 }
